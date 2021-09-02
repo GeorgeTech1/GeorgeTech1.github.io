@@ -52,6 +52,5 @@
     "@types/axios": "^0.14.0",
     "@types/react-router-dom": "^5.1.8",
     "gh-pages": "^3.2.3"
-  },
-  "proxy": "http://api.exchangeratesapi.io"
+  }
 }
