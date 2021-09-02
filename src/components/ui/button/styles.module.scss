@@ -1,0 +1,16 @@
+.button {
+  background: #007bff;
+  border: none;
+  max-width: 100%;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-family: 'Inter-Regular';
+  color: white;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    margin-top: 20px;
+  }
+}

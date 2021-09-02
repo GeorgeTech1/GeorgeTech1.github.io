@@ -1,0 +1,32 @@
+.headerWrapper {
+  height: 60px;
+  max-width: 100%;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerNav {
+  a {
+    font-family: 'Inter-Regular';
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    line-height: 21px;
+  }
+  a + a {
+    margin-left: 25px;
+  }
+}
+.rightContent {
+  font-family: 'Inter-Regular';
+  color: #333;
+  font-size: 17px;
+  line-height: 21px;
+  text-transform: uppercase;
+
+  span {
+    color: #007bff;
+  }
+}
