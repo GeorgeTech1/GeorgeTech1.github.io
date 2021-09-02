@@ -1,46 +1,82 @@
-# Getting Started with Create React App
+# Тестовое задание для Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+(ключевые навыки Git JavaScript HTML5 CSS3 React )
 
-## Available Scripts
+1. Что такое JavaScript ?
 
-In the project directory, you can run:
+JavaScript - это язык программирования, который значально был создан для работы и создания интерактивности в браузере, современный же
+JavaScript истользуется для создания мобильных приложений, десктопных, вебприложений, и так же для mocOs приложения. JavaScript является
+однопоточным, и не типизированным. Каждый год JavaScript обновляет спецификаю которая называется ES.
 
-### `yarn start`
+2. Основы JavaScript в браузере ?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+JavaScript используется в браузере для создания интерактивности динамичности что бы позволить пользователю взаимодействовать с интерфейсом.
+Каждое web-приложение создает DOM дерево, на основе html верстки, DOM дерево создает из каждоего html элемента объект с которым в дальнейшем
+можно взаимодействовать например через docuement и тд.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Напишите дополнительных возможностях, которые дает браузер — Web API ?
 
-### `yarn test`
+Любое современное web-приложения использует Api и взаимодействует с сервером через REST API. Web Api включает в себя такие стандартные
+функции как например addEventListener т.е тот функционал который мы используем для взаимодействии с DOM деревом.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Напишите способы поиска нужного HTML-элемента ?
 
-### `yarn build`
+document.getElementById(), document.querySelector(), document.querySelectorAll(), document.getElementByTagName,
+document.getElementsByClassName()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Работа с HTML-формами ?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+serialize, formData, e.preventDefault, button type button, type submit, валидация.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. Изменение структуры HTML-документа, что под собой предполагает ?
 
-### `yarn eject`
+Изменения дом дерева является самым трудозатратным действием. Для изменения дом дерева можно использовать innerText innerHTML append()
+appendChild() insertAdjacentHTML, insertAdjacentElement, document.write()
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+7. Библиотека React ?
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+React библиотека для создания пользовательских интерфейсов, созданная Facebook. Исключает взаимодействия с дом деревом, имеет огромное
+количество библиотек, методов оптимизации.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+8. React, по какому принципу работает ?
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+По принципу согласования, т.е сравнивает виртуальный дом с копией виртуального дома а далее с dom деревом.
 
-## Learn More
+9. Git, что это за система, для чего и как работает ? Ключевые моменты в использовании.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Git cистема контроля версии. Нужна для поддержки кода в актуальном стостоянии с возможность бекапа а так же с возможностью интеграции с
+серверами и хостингами.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+10. HTML 5 – это ?
+
+5 версия языка разметки. Включает в себя семантичные теги, которые улучшают семантику сайта.
+
+11.Мобильная и адаптивная вёрстка, в чем различия ?
+
+Мобильная верстка или mobile first это верстка, которую начинают с минимальных расширений и добивается увеличения путем minWidth, mixHeight.
+Адаптивная верстка достигается путем медиа запросов.
+
+12.Резиновые изображения – что это такое ?
+
+Изображение которое меняется в зависимости от контента display:block; max-width:100%; height:auto
+
+13.Как происходит вёрстка адаптивного макета и в чем ее различия?
+
+Определяешься с desctop first или mobile first. Далее посредством медиа запросов достигается верстка на разных расширениях.
+
+## Тестовое задание: frontend (JS + React)
+
+Напишите SPA для конвертирования валют. Для получения текущих курсов найдите и используйте любое отрытое API. Приложение должно состоять из
+двух страниц:
+
+1. Конвертер из одной валюты в другую. На этой странице должно быть текстовое поле, в которое можно ввести текст в виде 15 usd in rub и
+   получить результат.
+2. Страница с текущими курсами валют. На этой странице пользователь должен видеть «свежие» курсы валют относительно базовой валюты —
+   например, если базовая валюта — рубль, то пользователь видит, что 1 USD = 63.49 RUB, а 1 EUR = 72.20 По-умолчанию у пользователя должна
+   определяться «базовая» валюта, которую он может настроить. Плюсом будет: • Хорошо продуманный интерфейс и внешний вид
+
+• Тесты
+
+• Максимальная скорость работы приложения (как при загрузке приложения, так и при конвертировании валют) Для реализации используйте
+
+• React • Любую библиотеку для работы со стором (redux, mobx и т.д.) • Любые библиотеки, которые считаете уместными
